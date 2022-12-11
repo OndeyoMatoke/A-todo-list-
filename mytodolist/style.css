@@ -1,0 +1,50 @@
+
+/* position the body of the list */
+body {
+    background-color: rgb(167, 167, 129);
+    margin: 0;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myForm {
+    box-shadow: 1px 4px 7px;
+    border-radius: 5px;
+    width: 350px;
+}
+.myInput {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.myInput::placeholder {
+    font-size: 20px;
+}
+
+.myList {
+    margin: 0;
+    padding: 0;
+}
+
+.myList li {
+    padding: 25px;
+    list-style-type: none;
+    position: relative;
+}
+.myList li .fa-circle-check {
+    position: absolute;
+    right: 30px;
+    color: blue;
+    cursor: pointer;
+}
+.myList li .fa-trash-can {
+    position: absolute;
+    right: 8px;
+    cursor: pointer;
+}
+.myList li .clicked .fa-circle-check {
+    text-decoration: line-through;
+}
+
+
